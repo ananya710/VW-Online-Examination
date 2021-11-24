@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+     <link rel="stylesheet" href="bootstrap.min.css" />
+      
+        <title>Online Examination - Register</title>
+        
+    </head>
+    <body >
+
+		<div class="main-wrapper">
+					<div class="account-box">
+						<div class="account-wrapper">
+							<h3 class="account-title">Register</h3>
+							<form>
+								<div class="form-group">
+									<label>Name</label>&nbsp;
+									<input class="form-control" type="text"  placeholder="Enter Full Name" name="name" id="regObj.name" [(ngModel)]="regObj.name" >
+								</div>
+								<div class="form-group">
+									<label>Email</label>&nbsp;
+									<input class="form-control" type="text" placeholder="Enter Email" name= "email" id="regObj.email" [(ngModel)]="regObj.email" >
+								</div>
+								<div class="form-group">
+									<label>Mobile No.</label>&nbsp;
+									<input class="form-control" type="text" name = "mobileNo" id="regObj.mobileNo" [(ngModel)]="regObj.mobileNo" >
+								</div>
+								<div class="form-group">
+									<label>City</label>&nbsp;
+									<input class="form-control" type="text" name="city" id="regObj.city" [(ngModel)]="regObj.city" >
+								</div>
+								<div class="form-group">
+									<label>State</label>&nbsp;
+									<input class="form-control" type="text" name="state" id="regObj.state" [(ngModel)]="regObj.state" >
+								</div>
+                                <div class="form-group">
+									<label>DOB</label>&nbsp;
+									<input class="form-control" type="date" name="dob" id="regObj.dob" [(ngModel)]="regObj.dob"  >
+								</div>
+                                <div class="form-group">
+									<label>Qualification</label>&nbsp;
+									<input class="form-control" type="text" name="qualification" id="regObj.qualification" [(ngModel)]="regObj.qualification"  >
+								</div>
+                                <div class="form-group">
+									<label>Year of Completion</label>&nbsp;
+									<input class="form-control" type="text" name="year_of_completion" id="regObj.year_of_completion" [(ngModel)]="regObj.year_of_completion">
+								</div>
+								<div class="form-group text-center">&nbsp;
+									<button class="btn btn-primary account-btn" type="submit" (click)="saveRegistration()">Register</button>
+								</div>
+								<div class="account-footer">
+									<p>Already have an account? <a href="#">Login</a></p>
+								</div>
+							</form>
+							
+						</div>
+					</div>
+				</div>
+			
+        
+		
+		
+		
+      
+		
+    </body>
+</html>
